@@ -17,6 +17,10 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> bce3ed9 (v 1.0)
 *.suo
 *.ntvs*
 *.njsproj

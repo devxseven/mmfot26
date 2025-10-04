@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Buddha TV",
+    "url": "https://pplive.comquas.com:5443/LiveApp/streams/rHEBIW7pjQLU1677679374164.m3u8"
+  },
+  {
+    "name": "MRTV 4",
+    "url": "https://pplive.comquas.com:5443/LiveApp/streams/w3g3EYjBtqgJ1677679288037.m3u8"
+  },
+  {
+    "name": "Channel 7",
+    "url": "https://pplive.comquas.com:5443/LiveApp/streams/CLcBFN71NkF61709008601656.m3u8"
+  },
+  {
+    "name": "Mahar TV",
+    "url": "https://tv.mahar.live/mahar/website.stream/mahar/website2/chunks.m3u8"
+  },
+  {
+    "name": "Channel K",
+    "url": "https://5a13fe32ef748.streamlock.net/mmplay/5plus/chunklist_w1638546852.m3u8"
+  },
+  {
+    "name": "K-Drama TV",
+    "url": "https://newidco-rakutenviki-2-eu.rakuten.wurl.tv/2000.m3u8"
+  },
+  {
+    "name": "Trailers TV",
+    "url": "https://a01cb16df2c946afa72d661622953cad.mediatailor.eu-west-1.amazonaws.com/v1/manifest/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-4546/69876b29-9839-420c-8c32-ceb8392713f1/0.m3u8"
+  },
+  {
+    "name": "Discovery TV",
+    "url": "https://discoverfilm-discoverfilm-1-nl.samsung.wurl.tv/1200.m3u8"
+  },
+  {
+    "name": "MU Channel HD",
+    "url": "https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1d16255c1a535c8/eu-west-1/eu-west-1/6058004203001/profile_0/chunklist.m3u8"
+  },
+  {
+    "name": "MU Channel SD",
+    "url": "https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1d16255c1a535c8/eu-west-1/eu-west-1/6058004203001/profile_2/chunklist.m3u8"
+  },
+  {
+    "name": "Sport TV",
+    "url": "https://sp1564435593.mytvchain.info/live/sp1564435593/index.m3u8"
+  },
+  {
+    "name": "Real Madrid Channel",
+    "url": "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/bitrate_3.m3u8"
+  }
+]

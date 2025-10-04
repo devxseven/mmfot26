@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -66,3 +67,338 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+=======
+﻿/* src/App.css */
+html {
+  overscroll-behavior-x: none;
+}
+
+html.dark {
+  --tg-theme-text-color: #ffffff;
+  --tg-theme-section-bg-color: #1d2733;
+  --tg-theme-bg-color: #212d3b;
+  --tg-theme-secondary-bg-color: #151e27;
+  --tg-theme-primary-color: #5288c1;
+  --tg-color-scheme: dark;
+  overscroll-behavior-x: none;
+}
+
+body {
+  min-height: 100vh;
+  height: auto;
+  --bg-color: var(--tg-theme-section-bg-color, #fff);
+  --card-bg-color: var(--tg-theme-bg-color, #fff);
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--tg-theme-text-color, #212121);
+  margin: 0;
+  padding: 0;
+  color-scheme: var(--tg-color-scheme);
+  padding-bottom: 56px;
+}
+
+body.gray {
+  background-color: var(--tg-theme-section-bg-color, #f5f5f5);
+}
+
+section {
+  text-align: center;
+  background-color: var(--bg-color, #ffffff);
+  padding-left: calc(var(--tg-safe-area-inset-left, 0px) + var(--tg-content-safe-area-inset-left, 0px) + 16px);
+  padding-right: calc(var(--tg-safe-area-inset-right, 0px) + var(--tg-content-safe-area-inset-right, 0px) + 16px);
+  padding-bottom: 16px;
+}
+
+.league,
+.home-name,
+.away-name,
+.match-date,
+.match-time {
+  color: var(--tg-theme-text-color, #212121);
+}
+
+.button {
+  background-color: var(--card-bg-color, #ffffff);
+  color: var(--tg-theme-text-color, #212121);
+}
+
+.no-hover:hover {
+  background-color: inherit !important;
+  transform: none !important;
+  box-shadow: none !important;
+  cursor: default !important;
+}
+
+.game-card img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.animate-pulse {
+  animation: beat 1s infinite;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+  background-color: var(--tg-theme-bg-color, #ffffff);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+}
+
+.nav-bar-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 6px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.nav-bar-top {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 0;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--tg-theme-text-color, #212121);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 36px;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.1s;
+  text-transform: uppercase;
+}
+
+.nav-button.active {
+  background-color: var(--tg-theme-secondary-bg-color, #f0f0f0);
+  color: var(--tg-theme-text-color, #212121);
+}
+
+.nav-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.select {
+  background-color: var(--card-bg-color, #ffffff);
+  color: var(--tg-theme-text-color, #212121);
+  border: 1px solid var(--tg-theme-text-color, #212121);
+}
+
+.select:hover {
+  border: 1px solid var(--tg-theme-text-color, #6b7280);
+}
+
+.select:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--tg-theme-primary-color, #2b2b2b);
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.main-section {
+  padding: 16px;
+}
+
+.tab-content {
+  margin-top: 16px;
+  display: block;
+}
+
+/* Player page styles */
+/* Add to src/App.css */
+.player-page section {
+  padding: 8px;
+  text-align: center;
+  background-color: var(--bg-color, #ffffff);
+  padding-left: calc(var(--tg-safe-area-inset-left, 0px) + var(--tg-content-safe-area-inset-left, 0px) + 8px);
+  padding-right: calc(var(--tg-safe-area-inset-right, 0px) + var(--tg-content-safe-area-inset-right, 0px) + 8px);
+  padding-top: calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px) + 15px);
+}
+
+
+
+.timer-mm {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--tg-theme-text-color, #222);
+}
+
+#player-buttons .custom-card {
+  background-color: var(--card-bg-color, #ffffff);
+  color: var(--tg-theme-text-color, #222);
+}
+
+#player-buttons .custom-card:hover {
+  transform: scale(1.05);
+}
+
+#player-buttons .custom-card.selected {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+.animate-pulse {
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Channel player page */
+.channel-player-page {
+  height: 100vh;
+  background-color: var(--tg-theme-bg-color, #000);
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-player-page .art-player {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Game page */
+.game-page {
+  height: 100vh;
+  background-color: var(--tg-theme-bg-color, #fff);
+}
+
+/* Skeleton loading */
+.skeleton-container {
+  display: flex;
+  justify-content: center;
+}
+
+.skeleton-card {
+  background-color: var(--card-bg-color, #ffffff);
+  border-radius: 8px;
+  padding: 16px;
+  animation: pulse 1.5s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skeleton-square {
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  border-radius: 8px;
+  animation: shimmer 1.5s infinite;
+  margin-bottom: 2px;
+}
+
+.skeleton-line {
+  width: 4rem;
+  height: 14px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  margin: 4px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .nav-bar-bottom {
+    display: none;
+  }
+
+  .nav-bar-top {
+    display: flex;
+  }
+}
+
+@media (max-width: 639px) {
+  .nav-bar-top {
+    display: none;
+  }
+
+  .main-section {
+    padding-top: calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px) + 16px);
+  }
+
+  .nav-bar-bottom {
+    display: flex;
+  }
+
+  .nav-button {
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+    gap: 1px;
+    padding: 4px 36px;
+  }
+}
+>>>>>>> bce3ed9 (v 1.0)
