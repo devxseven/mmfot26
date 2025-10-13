@@ -12,12 +12,11 @@ const GamePage = React.lazy(() => import('./pages/GamePage'));
 // Loading component
 const LoadingFallback = () => (
   <div className="loading-container min-h-screen flex items-center justify-center" style={{ backgroundColor: 'var(--bg-color)' }}>
-    <img
-      src="/src/assets/react.svg"
-      alt="Loading..."
-      className="w-20 h-20 animate-pulse"
-      style={{ animationDuration: '3s' }}
-    />
+    <section>
+      <div className="text-5xl font-extrabold animate-pulse" style={{ animationDuration: '2s' }}>
+        MM FOT
+      </div>
+    </section>
   </div>
 );
 

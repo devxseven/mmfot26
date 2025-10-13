@@ -1,7 +1,6 @@
 // src/pages/PlayerPage.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import CryptoJS from 'crypto-js';
 import moment from 'moment-timezone';
 import MatchDetail from '../components/match/MatchDetail';
 import MatchPlayer from '../components/match/MatchPlayer';
@@ -12,7 +11,6 @@ import { generateAuthKey } from '../utils/streamUtils';
 import ReloadButton from '../components/common/ReloadButton';
 import Info from "../assets/info-reload.png";
 import GamePlayer from '../components/player/GamePlayer';
-import { FaTelegram } from "react-icons/fa";
 import TelegramButton from '../components/common/TelegramButton';
 
 const PlayerPage = () => {

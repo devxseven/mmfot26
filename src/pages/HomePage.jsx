@@ -6,18 +6,24 @@ import ChannelList from '../components/channel/ChannelList';
 import GameList from '../components/game/GameList';
 import ReloadButton from '../components/common/ReloadButton';
 import DarkModeButton from '../components/common/DarkModeButton';
-//import useTelegram from '../hooks/useTelegram';
+import useTelegram from '../hooks/useTelegram';
 import { fetchMatches, fetchChannels, fetchGames } from '../utils/api';
 import { showInterstitialAd, showRewardedAd } from '../utils/ads';
 
 const HomePage = () => {
-  //const { tg, isFullscreen } = useTelegram();
+  const { tg } = useTelegram();
   const [activeTab, setActiveTab] = useState('home');
   const [matches, setMatches] = useState([]);
   const [channels, setChannels] = useState([]);
   const [games, setGames] = useState([]);
   const [filter, setFilter] = useState('all');
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (tg) {
+      tg.BackButton.hide();
+    }
+  }, [tg]);
 
   useEffect(() => {
     loadData();
