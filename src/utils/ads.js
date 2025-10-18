@@ -12,7 +12,7 @@ export const showRewardedInterstitialAd = (onClose, fallback) => {
     })
     .catch(() => {
       if (fallback) {
-        window.open('https://www.profitableratecpm.com/ewdrwi8p?key=c3f8195dd58a3e2c408fed211cc8ddee', '_blank');
+        window.open('https://www.effectivegatecpm.com/gvq64qttqq?key=9eda1aa2f84634ef24faf5a2620856b7', '_blank');
         fallback();
       }
     });
@@ -25,7 +25,7 @@ export const showRewardedPopupAd = (onClose, fallback) => {
     })
     .catch(() => {
       if (fallback) {
-        window.open('https://www.profitableratecpm.com/ewdrwi8p?key=c3f8195dd58a3e2c408fed211cc8ddee', '_blank');
+        window.open('https://www.effectivegatecpm.com/gvq64qttqq?key=9eda1aa2f84634ef24faf5a2620856b7', '_blank');
         fallback();
       }
     });
