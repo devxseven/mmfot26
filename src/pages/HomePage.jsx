@@ -8,7 +8,7 @@ import ReloadButton from '../components/common/ReloadButton';
 import DarkModeButton from '../components/common/DarkModeButton';
 import useTelegram from '../hooks/useTelegram';
 import { fetchMatches, fetchChannels, fetchGames } from '../utils/api';
-import { showInterstitialAd, showRewardedAd } from '../utils/ads';
+import { showRewardedInterstitialAd } from '../utils/ads';
 
 const HomePage = () => {
   const { tg } = useTelegram();
@@ -68,26 +68,18 @@ const HomePage = () => {
   };
 
   const handleMatchClick = (matchId) => {
-    const navigateToPlayer = () => {
-      window.location.href = `/player?id=${matchId}`;
-    };
-
-    if (Math.random() < 0.5) {
-      showInterstitialAd(
-        navigateToPlayer,
-        navigateToPlayer
-      );
-    } else {
-      // For rewarded ads, the onReward callback is also needed.
-      showRewardedAd(navigateToPlayer, navigateToPlayer, navigateToPlayer);
-    }
+    showRewardedInterstitialAd(
+      () => {
+        window.location.href = `/player?id=${matchId}`;
+      },
+      () => {
+        window.location.href = `/player?id=${matchId}`;
+      }
+    );
   };
 
   const handleChannelClick = (channel) => {
-    showRewardedAd(
-      () => {
-        window.location.href = `/ch-player?url=${encodeURIComponent(channel.url)}`;
-      },
+    showRewardedInterstitialAd(
       () => {
         window.location.href = `/ch-player?url=${encodeURIComponent(channel.url)}`;
       },
@@ -98,10 +90,7 @@ const HomePage = () => {
   };
 
   const handleGameClick = (game) => {
-    showRewardedAd(
-      () => {
-        window.location.href = `/game?url=${encodeURIComponent(game.embed)}`;
-      },
+    showRewardedInterstitialAd(
       () => {
         window.location.href = `/game?url=${encodeURIComponent(game.embed)}`;
       },

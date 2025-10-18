@@ -14,7 +14,7 @@ const LoadingFallback = () => (
   <div className="loading-container min-h-screen flex items-center justify-center" style={{ backgroundColor: 'var(--bg-color)' }}>
     <section>
       <div className="text-5xl font-extrabold animate-pulse" style={{ animationDuration: '2s' }}>
-        MM FOT
+        FOT 24
       </div>
     </section>
   </div>
